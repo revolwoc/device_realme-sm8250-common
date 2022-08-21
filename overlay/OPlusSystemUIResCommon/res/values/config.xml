@@ -33,4 +33,7 @@
     -->
     <integer name="config_udfpsHbmType">0</integer>
 
+    <!-- Use framework FOD dimming instead of kernel dimming -->
+    <bool name="config_udfpsFrameworkDimming">true</bool>
+
 </resources>
