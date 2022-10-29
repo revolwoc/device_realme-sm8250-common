@@ -108,7 +108,12 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
-    libbthost_if
+    libbthost_if \
+    liblhdc \
+    liblhdcBT_enc \
+    liblhdcdec \
+    liblhdcBT_dec \
+    libbluetooth_audio_session
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
