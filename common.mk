@@ -324,6 +324,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 PRODUCT_PACKAGES += \
+    ApertureOverlay \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
