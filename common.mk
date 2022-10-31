@@ -336,6 +336,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_PACKAGES += \
+    ApertureOverlay \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
