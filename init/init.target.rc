@@ -49,6 +49,8 @@ on init
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+	chown system system /dev/stune/top-app/schedtune.boost
+	chmod 0664 /dev/stune/top-app/schedtune.boost
     start logd
 
 on early-fs
@@ -78,14 +80,14 @@ on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6390/fs_ready 1
+
     mkdir /data/oplus/multimedia 0775 system system
     mkdir /data/oplus/multimedia/ui 0775 system system
     mkdir /data/oplus/multimedia/ringtones 0775 system system
     mkdir /data/oplus/multimedia/notifications 0775 system system
 
 on early-boot
-    start vendor.sensors
-
+    start vendor.sensors	
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
     # Add a cpuset for the camera daemon
