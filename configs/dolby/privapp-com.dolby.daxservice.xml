@@ -12,7 +12,7 @@
 
 <permissions>
     <privapp-permissions package="com.dolby.daxservice">
-    <!-- Read the contents of your shared storage -->
+ <!-- Read the contents of your shared storage -->
     <permission name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- Modify or delete the contents of your shared storage -->
     <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />

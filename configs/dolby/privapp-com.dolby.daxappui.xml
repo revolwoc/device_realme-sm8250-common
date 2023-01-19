@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.dolby.daxappui">
-    <!-- Pair with Bluetooth devices -->
+ <!-- Pair with Bluetooth devices -->
     <permission name="android.permission.BLUETOOTH" />
     <!-- Access Bluetooth settings -->
     <permission name="android.permission.BLUETOOTH_ADMIN" />
