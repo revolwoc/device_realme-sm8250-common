@@ -5835,10 +5835,6 @@ case "$target" in
 	fi
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
-    echo f > /proc/irq/default_smp_affinity
-    echo 1 > /proc/irq/338/smp_affinity_list # kgsl
-    echo 2 > /proc/irq/300/smp_affinity_list # msm_drm
-
 	# Enable bus-dcvs
 	for device in /sys/devices/platform/soc
 	do
